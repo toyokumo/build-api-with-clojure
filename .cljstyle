@@ -1,0 +1,14 @@
+{:rules {:indentation {:list-indent 1
+                       :indents {defrecord [[:inner 0] [:inner 1]]}}
+         :whitespace {:remove-surrounding? true
+                      :remove-trailing? true
+                      :insert-missing? true}
+         :blank-lines {:trim-consecutive? true
+                       :insert-padding? true
+                       :padding-lines 1}
+         :eof-newline {:enabled? true}
+         :comments {:enabled? false}
+         :vars {:enabled? false}
+         :functions {:enabled? false}
+         :types {:enabled? false}
+         :namespaces {:indent-size 1}}}
