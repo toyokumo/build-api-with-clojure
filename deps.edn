@@ -1,2 +1,4 @@
 {:paths ["src"]
- :deps {org.clojure/clojure {:mvn/version "1.11.1"}}}
+ :deps {org.clojure/clojure {:mvn/version "1.11.1"}
+        info.sunng/ring-jetty9-adapter {:mvn/version "0.17.6" :exclusions [org.slf4j/slf4j-api]}
+        spootnik/unilog {:mvn/version "0.7.30"}}}
