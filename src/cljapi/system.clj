@@ -18,11 +18,3 @@
 
 (defn stop [system]
   (component/stop system))
-
-(defonce system (atom nil))
-
-(defn go []
-  (when @system
-    (stop @system)
-    (reset! system nil))
-  (reset! system (start)))
