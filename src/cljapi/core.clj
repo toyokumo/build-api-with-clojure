@@ -1,4 +1,5 @@
 (ns cljapi.core
+  (:gen-class)
   (:require
    [cljapi.system :as system]))
 
