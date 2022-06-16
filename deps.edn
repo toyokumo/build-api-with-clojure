@@ -3,4 +3,6 @@
         info.sunng/ring-jetty9-adapter {:mvn/version "0.17.6" :exclusions [org.slf4j/slf4j-api]}
         spootnik/unilog {:mvn/version "0.7.30"}
         com.stuartsierra/component {:mvn/version "1.1.0"}}
- :aliases {:dev {:extra-paths ["dev"]}}}
+ :aliases {:dev {:extra-paths ["dev"]}
+           :build {:deps {io.github.clojure/tools.build {:git/tag "v0.8.2" :git/sha "ba1a2bf"}}
+                   :ns-default build}}}
