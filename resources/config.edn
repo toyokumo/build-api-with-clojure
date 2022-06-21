@@ -1,0 +1,4 @@
+{:server {:opts {:host "localhost"
+                 :port #long #profile {:default 5000
+                                       :dev 8000}
+                 :join? false}}}
