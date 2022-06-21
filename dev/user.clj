@@ -5,7 +5,7 @@
 (defonce system (atom nil))
 
 (defn start []
-  (reset! system (system/start)))
+  (reset! system (system/start :dev)))
 
 (defn stop []
   (when @system
