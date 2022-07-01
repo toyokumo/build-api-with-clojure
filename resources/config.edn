@@ -1,4 +1,10 @@
-{:server {:opts {:host "localhost"
+{:logging {:level #profile {:dev :debug
+                            :default :info}
+           :console #profile {:prod {:encoder :json}
+                              :default true}
+           :overrides {"org.eclipse.jetty" :info}}
+
+ :server {:opts {:host "localhost"
                  :port #long #profile {:default 5000
                                        :dev 8000}
                  :join? false}}}
