@@ -13,6 +13,10 @@ static-check: format lint
 clean:
 	rm -fr target/
 
+.PHONY: test
+test:
+	bin/kaocha --fail-fast
+
 .PHONY: build
 build: clean
 	clojure -T:build uber
