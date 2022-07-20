@@ -4,7 +4,9 @@
         org.clojure/tools.logging {:mvn/version "1.2.4"}
         spootnik/unilog {:mvn/version "0.7.30"}
         com.stuartsierra/component {:mvn/version "1.1.0"}
-        aero/aero {:mvn/version "1.1.6"}}
+        aero/aero {:mvn/version "1.1.6"}
+        metosin/reitit {:mvn/version "0.5.18"}
+        metosin/ring-http-response {:mvn/version "0.9.3"}}
  :aliases {:dev {:extra-paths ["dev"]}
            :test {:extra-deps {lambdaisland/kaocha {:mvn/version "1.68.1059"}}
                   :main-opts ["-m" "kaocha.runner"]}
