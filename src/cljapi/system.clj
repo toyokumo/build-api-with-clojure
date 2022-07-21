@@ -7,9 +7,9 @@
    [com.stuartsierra.component :as component]
    [unilog.config :as unilog]))
 
-(defn- new-system [config]
+(defn- new-system [{:as config :keys [:profile]}]
   (component/system-map
-   :handler (c.handler/map->Handler {})
+   :handler (c.handler/map->Handler {:profile profile})
    :server (component/using
             (c.server/map->Jetty9Server (:server config))
             [:handler])))
