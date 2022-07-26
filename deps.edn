@@ -8,7 +8,8 @@
         metosin/reitit {:mvn/version "0.5.18"}
         metosin/ring-http-response {:mvn/version "0.9.3"}
         ring/ring-devel {:mvn/version "1.9.5"}
-        ring-logger/ring-logger {:mvn/version "1.1.1"}}
+        ring-logger/ring-logger {:mvn/version "1.1.1"}
+        ring/ring-defaults {:mvn/version "0.3.3"}}
  :aliases {:dev {:extra-paths ["dev"]}
            :test {:extra-deps {lambdaisland/kaocha {:mvn/version "1.68.1059"}}
                   :main-opts ["-m" "kaocha.runner"]}
