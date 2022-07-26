@@ -6,8 +6,8 @@
 
 (defmethod h/handler [::r/hello :get]
   [_]
-  (res/ok "Hello cljapi!!"))
+  (res/ok {:greeting "Hello cljapi!!"}))
 
 (defmethod h/handler [::r/goodbye :get]
   [_]
-  (res/ok "Goodbye!"))
+  (res/ok {:greeting "Goodbye!"}))
